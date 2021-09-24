@@ -1,0 +1,91 @@
+
+
+INSERT INTO `bookstoretest`.`publishers` (`city`, `country`, `name`) VALUES ('Tokyo', 'Japan', 'Kodansa');
+INSERT INTO `bookstoretest`.`publishers` (`city`, `country`, `name`) VALUES ('Warsaw', 'Poland', 'NOWA');
+INSERT INTO `bookstoretest`.`publishers` (`city`, `country`, `name`) VALUES ('Tokyo', 'Japan', 'Square Enix');
+INSERT INTO `bookstoretest`.`publishers` (`city`, `country`, `name`) VALUES ('New South Wales', 'Australia', 'Allen&Unwin');
+
+INSERT INTO `bookstoretest`.`languages` (`language_type`) VALUES ('English');
+INSERT INTO `bookstoretest`.`languages` (`language_type`) VALUES ('Polish');
+INSERT INTO `bookstoretest`.`languages` (`language_type`) VALUES ('Japanese');
+INSERT INTO `bookstoretest`.`languages` (`language_type`) VALUES ('Greek');
+INSERT INTO `bookstoretest`.`languages` (`language_type`) VALUES ('German');
+
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Manga');
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Fantasy');
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Adventure');
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Fantasy');
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Steampunk');
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Music');
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Drama');
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Romance');
+INSERT INTO `bookstoretest`.`categories` (`type`) VALUES ('Thriller');
+
+
+INSERT INTO `bookstoretest`.`authors` (`country`, `first_name`, `last_name`) VALUES ('England', 'Jhon Roland Reu', 'Tolkien');
+INSERT INTO `bookstoretest`.`authors` (`country`, `first_name`, `last_name`) VALUES ('Japan', 'Hiromi', 'Arawaka');
+INSERT INTO `bookstoretest`.`authors` (`country`, `first_name`, `last_name`) VALUES ('Japan', 'Naoshi', 'Arawaka');
+INSERT INTO `bookstoretest`.`authors` (`country`, `first_name`, `last_name`) VALUES ('Poland', 'Andrzej', 'Sapkowski');
+
+INSERT INTO `bookstoretest`.`roles` (`type`) VALUES ('Admin');
+INSERT INTO `bookstoretest`.`roles` (`type`) VALUES ('User');
+
+INSERT INTO `bookstoretest`.`accounts` (`coins`, `date_of_birth`, `email`, `first_name`, `gender`, `last_name`, `password`, `username`, `role_id`) VALUES ('1000000000', '1991-07-08', 'lepa@outlook.com', 'Lefteris', 'Male', 'Papadogianis', 'MAINADMIN', 'MAINADMIN', '1');
+INSERT INTO `bookstoretest`.`accounts` (`coins`, `date_of_birth`, `email`, `first_name`, `gender`, `last_name`, `password`, `username`, `role_id`) VALUES ('1500', '2000-06-09', 'mairoula@gmail.com', 'Mairi', 'Female', 'Vasileiou', 'mairoula', 'mairoula2k', '2');
+INSERT INTO `bookstoretest`.`accounts` (`coins`, `date_of_birth`, `email`, `first_name`, `gender`, `last_name`, `password`, `username`, `role_id`) VALUES ('100', '1994-12-24', 'antonisant@gmail.com', 'Antonis', 'Male', 'Antoniou', 'antonis30', '1994antonis', '2');
+
+INSERT INTO `bookstoretest`.`account_purchase_history` (`euros_spent`, `purchase_date`, `purchased_coins`, `account_id`) VALUES ('50', '2021-01-11 12:24:01.000000', '500', '2');
+
+INSERT INTO `bookstoretest`.`pricing` (`discount`, `starting_price`) VALUES ('0', '50');
+INSERT INTO `bookstoretest`.`pricing` (`discount`, `ending_date`, `starting_date`, `starting_price`) VALUES ('10', '2021-01-25', '2021-01-11', '100');
+INSERT INTO `bookstoretest`.`pricing` (`discount`, `starting_price`) VALUES ('0', '20');
+INSERT INTO `bookstoretest`.`pricing` (`discount`, `starting_price`) VALUES ('0', '20');
+
+INSERT INTO `bookstoretest`.`books` (`description`, `isbn13`, `pages`, `publication_date`, `rating`, `title`, `pricing_id`, `publisher_id`) VALUES ('The fifth novel in the New York Times bestselling Witcher series that inspired the hit Netflix show finds Ciri trapped in a distant world and separated from Geralt and her destiny.', '1592837401983', '531', '2018-03-08', '4.8', 'The Witcher: The Lady Of The Lake', '1', '2');
+INSERT INTO `bookstoretest`.`books` (`description`, `isbn13`, `pages`, `publication_date`, `rating`, `title`, `pricing_id`, `publisher_id`) VALUES ('Classic edition of the second volume of The Lord of the Rings, featuring Tolkien\'s original unused dust-jacket design. Includes special packaging and the definitive edition of the text, with fold-out map. Frodo and the Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in the battle with an evil spirit in the Mines of Moria; and at the Falls of Rauros, Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape the rest of the company were attacked by Orcs. Now they continue their journey alone down the great River Anduin - alone, that is, save for the mysterious creeping figure that follows wherever they go. This classic hardback features Tolkien\'s original unused dust-jacket design, and its text has been fully restored with almost 400 corrections - with the full co-operation of Christopher Tolkien - making it the definitive version, and as close as possible to the version that J.R.R. Tolkien intended.Also included is the original red and black map of the Shire as a foldout sheet.', '1732930928374', '352', '2011-02-11', '5', 'Lord Of The Rings: The Two Towers', '2', '4');
+INSERT INTO `bookstoretest`.`books` (`description`, `isbn13`, `pages`, `publication_date`, `rating`, `title`, `pricing_id`, `publisher_id`) VALUES ('Having consumed Gluttony\'s powers, Pride may now be too much to handle for Ed and his allies. Their only chance could be with the help of Al and Hohenheim, but will Ed trust his estranged father long enough for their plan to work? And back at Central City, Mustang and his team have started their attack. But does the army have a dangerous trick up its sleeve...?', '1284657290183', '94', '2010-02-04', '5', 'Fullmetal Alchemist Volume 22', '3', '3');
+INSERT INTO `bookstoretest`.`books` (`description`, `isbn13`, `pages`, `publication_date`, `rating`, `title`, `pricing_id`, `publisher_id`) VALUES ('Kosei Arima was a piano prodigy until his cruel taskmaster of a mother died suddenly, changing his life forever. Driven by his pain to abandon piano, Kosei now lives in a monotonous, colourless world. Having resigned himself to a bland life, he is surprised when he meets Kaori Miyazono, a violinist with an unorthodox style. Can she bring Kosei back to music, and back to life? The sixth volume of this critically-acclaimed manga series.', '8763456182730', '101', '2016-03-31', '5', 'Your Lie In April Volume 6', '4', '1');
+
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('1', '2');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('4', '1');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('4', '6');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('4', '7');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('4', '8');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('2', '2');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('2', '3');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('3', '1');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('3', '4');
+INSERT INTO `bookstoretest`.`books_categories` (`book_id`, `category_id`) VALUES ('3', '5');
+
+INSERT INTO `bookstoretest`.`books_authors` (`book_id`, `author_id`) VALUES ('2', '1');
+INSERT INTO `bookstoretest`.`books_authors` (`book_id`, `author_id`) VALUES ('3', '2');
+INSERT INTO `bookstoretest`.`books_authors` (`book_id`, `author_id`) VALUES ('4', '3');
+INSERT INTO `bookstoretest`.`books_authors` (`book_id`, `author_id`) VALUES ('1', '4');
+
+INSERT INTO `bookstoretest`.`books_languages` (`book_id`, `language_id`) VALUES ('1', '1');
+INSERT INTO `bookstoretest`.`books_languages` (`book_id`, `language_id`) VALUES ('2', '1');
+INSERT INTO `bookstoretest`.`books_languages` (`book_id`, `language_id`) VALUES ('3', '1');
+INSERT INTO `bookstoretest`.`books_languages` (`book_id`, `language_id`) VALUES ('4', '1');
+
+INSERT INTO `bookstoretest`.`orders` (`order_date`, `total_coins`, `account_id`) VALUES ('2021-01-25 09:20:06.000000', '130', '3');
+INSERT INTO `bookstoretest`.`orders` (`order_date`, `total_coins`, `account_id`) VALUES ('2021-01-25 18:07:31.000000', '70', '2');
+
+INSERT INTO `bookstoretest`.`order_details` (`discount_rate`, `original_price`, `total_price`, `book_id`, `order_id`) VALUES ('10', '100', '90', '2', '1');
+INSERT INTO `bookstoretest`.`order_details` (`discount_rate`, `original_price`, `total_price`, `book_id`, `order_id`) VALUES ('0', '20', '20', '3', '1');
+INSERT INTO `bookstoretest`.`order_details` (`discount_rate`, `original_price`, `total_price`, `book_id`, `order_id`) VALUES ('0', '20', '20', '4', '1');
+INSERT INTO `bookstoretest`.`order_details` (`discount_rate`, `original_price`, `total_price`, `book_id`, `order_id`) VALUES ('0', '50', '50', '1', '2');
+INSERT INTO `bookstoretest`.`order_details` (`discount_rate`, `original_price`, `total_price`, `book_id`, `order_id`) VALUES ('0', '20', '20', '3', '2');
+
+
+DELIMITER /
+create event check_discount
+ON SCHEDULE EVERY 1 DAY STARTS '2021-01-20 02:00:01' ON COMPLETION PRESERVE ENABLE 
+COMMENT 'Updates the discount field depending on the date'
+DO 
+	BEGIN
+		SET SQL_SAFE_UPDATES=0;
+		SELECT NOW() INTO @time;
+		update pricing SET discount=0,starting_date=null,ending_date=null where ending_date<=@time;
+		SET SQL_SAFE_UPDATES=1;
+        END /
+DELIMITER ;
